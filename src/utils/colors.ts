@@ -4,4 +4,7 @@ export default {
   title: "#2F2E41",
   subtitle: "#838385",
   white: "#ECEBEB",
+
+
+  
 };
