@@ -3,20 +3,24 @@ import styled from "styled-components/native";
 import colors from "../../utils/colors";
 import { StatusBar, Platform } from "react-native";
 export const Container = styled.View`
-  border: 2px solid red;
   flex: 1;
-  padding: 10px;
+  padding: 10px 30px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   padding-top: ${Platform.OS === "android" ? StatusBar.currentHeight : 0}px;
+  background-color: ${colors.background};
 `;
 
 export const BookImg = styled.Image`
   margin-top: 8px;
+  width: 39px;
+  height: 25px;
 `;
 
 export const WelcomeImg = styled.Image`
   margin-top: 10px;
+  width: 330px;
+  height: 248px;
 `;
 export const ContainerBook = styled.View`
   width: 54px;
@@ -25,6 +29,10 @@ export const ContainerBook = styled.View`
   background-color: ${colors.icon};
   align-items: center;
   justify-content: center;
+`;
+
+export const ContainerText = styled.View`
+  align-items: center;
 `;
 
 export const Title = styled.Text`
@@ -44,7 +52,7 @@ export const Button = styled.TouchableOpacity`
   height: 52px;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   border-radius: 10px;
   background-color: ${colors.primary};
 `;

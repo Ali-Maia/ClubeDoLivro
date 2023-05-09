@@ -1,5 +1,6 @@
 import * as S from "./styles";
-import heart from "../../img/heart.png";
+import ButtonNav from "../../Components/ButtonNav";
+import book from "../../img/book.png";
 import welcome from "../../img/welcome.png";
 import arrow from "../../img/arrow.png";
 const Welcome = () => {
@@ -10,17 +11,21 @@ const Welcome = () => {
     // TSX
     <S.Container>
       <S.ContainerBook>
-        <S.BookImg source={heart} />
+        <S.BookImg source={book} />
       </S.ContainerBook>
       <S.WelcomeImg source={welcome} />
-      <S.Title>Clube do Livro</S.Title>
-      <S.SubTitle>
-        Conecte-se com pessoas de diversos lugares do mundo.
-      </S.SubTitle>
-      <S.Button>
+      <S.ContainerText>
+        <S.Title>Clube do Livro</S.Title>
+        <S.SubTitle>
+          Conecte-se com pessoas de diversos lugares do mundo.
+        </S.SubTitle>
+      </S.ContainerText>
+
+      <ButtonNav text={"Quero Participar"}/>
+      {/* <S.Button>
         <S.Text>Quero Participar</S.Text>
         <S.ArrowImg source={arrow} />
-      </S.Button>
+      </S.Button> */}
     </S.Container>
   );
 };
