@@ -21,7 +21,7 @@ const Welcome = () => {
         </S.SubTitle>
       </S.ContainerText>
 
-      <ButtonNav text={"Quero Participar"}/>
+      <ButtonNav text={"Quero Participar"} icon={arrow} gap={30} />
       {/* <S.Button>
         <S.Text>Quero Participar</S.Text>
         <S.ArrowImg source={arrow} />

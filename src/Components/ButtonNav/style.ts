@@ -1,15 +1,20 @@
 import styled from "styled-components/native";
 import colors from "../../utils/colors";
+type ButtonProps = {
+  width: number;
+  gap: number;
+  height: number;
+};
 
-export const Button = styled.TouchableOpacity`
-  width: 280px;
-  height: 52px;
+export const Button = styled.TouchableOpacity<ButtonProps>`
+  width: ${({ width }) => width}px;
+  height: ${({height}) => height}px;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   border-radius: 10px;
   background-color: ${colors.primary};
-  gap: 30px;
+  gap: ${({ gap }) => gap}px;
 `;
 export const Text = styled.Text`
   font-weight: 700;
@@ -18,6 +23,4 @@ export const Text = styled.Text`
   text-align: center;
   color: ${colors.white};
 `;
-export const Icon = styled.Image`
-  justify-self: flex-end;
-`;
+export const Icon = styled.Image``;
