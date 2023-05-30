@@ -4,10 +4,10 @@ import { Platform, StatusBar } from "react-native";
 
 export const Container = styled.View`
   flex: 1;
+  padding: 30px; 
   padding-top: ${Platform.OS == "android" ? StatusBar.currentHeight : 0}px;
   background-color: ${colors.background};
   align-items: center;
-  margin: 30px;
 `;
 
 export const CardContainer = styled.ScrollView`

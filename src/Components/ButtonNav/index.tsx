@@ -1,4 +1,5 @@
 import { ImageSourcePropType } from "react-native/types";
+import { TouchableOpacityProps } from "react-native";
 import * as S from "./style";
 type ButtonNavProps = {
   text: string;
@@ -7,7 +8,7 @@ type ButtonNavProps = {
   width?: number;
   gap?: number;
   icon?: ImageSourcePropType;
-};
+} & TouchableOpacityProps;
 
 const ButtonNav = ({
   text,
@@ -15,9 +16,10 @@ const ButtonNav = ({
   width = 280,
   height = 52,
   gap = 0,
+  ...rest
 }: ButtonNavProps) => {
   return (
-    <S.Button width={width} height={height} gap={gap}>
+    <S.Button width={width} height={height} gap={gap} {...rest}>
       <S.Text>{text}</S.Text>
       <S.Icon source={icon} />
     </S.Button>

@@ -8,7 +8,7 @@ import biotech from "../../img/Biotech.png";
 import blackCat from "../../img/blackCat.png";
 import trust from "../../img/Trust.png";
 
-const Category = () => {
+const Category = ({ navigation }: any) => {
   return (
     <S.Container>
       <S.Tittle>Selecione o seus gêneros favoritos:</S.Tittle>
@@ -29,7 +29,10 @@ const Category = () => {
         <CardCategory icon={trust} text={"autoajuda"} />
       </S.CardContainer>
 
-      <ButtonNav text={"Concluir"}/>
+      <ButtonNav
+        text={"Concluir"}
+        onPress={() => navigation.navigate("Welcome")}
+      />
     </S.Container>
   );
 };

@@ -3,7 +3,7 @@ import ButtonNav from "../../Components/ButtonNav";
 import book from "../../img/book.png";
 import welcome from "../../img/welcome.png";
 import arrow from "../../img/arrow.png";
-const Welcome = () => {
+const Welcome = ({ navigation }: any) => {
   //Componente
   //TS --> Lógica
 
@@ -21,7 +21,12 @@ const Welcome = () => {
         </S.SubTitle>
       </S.ContainerText>
 
-      <ButtonNav text={"Quero Participar"} icon={arrow} gap={30} />
+      <ButtonNav
+        text={"Quero Participar"}
+        icon={arrow}
+        gap={30}
+        onPress={() => navigation.navigate("Category")}
+      />
       {/* <S.Button>
         <S.Text>Quero Participar</S.Text>
         <S.ArrowImg source={arrow} />

@@ -1,14 +1,15 @@
 import styled from "styled-components/native";
 import colors from "../../utils/colors";
+import { TouchableOpacityProps } from "react-native";
 type ButtonProps = {
   width: number;
   gap: number;
   height: number;
-};
+} & TouchableOpacityProps;
 
 export const Button = styled.TouchableOpacity<ButtonProps>`
   width: ${({ width }) => width}px;
-  height: ${({height}) => height}px;
+  height: ${({ height }) => height}px;
   flex-direction: row;
   align-items: center;
   justify-content: center;
