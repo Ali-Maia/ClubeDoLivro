@@ -3,6 +3,8 @@ import ButtonNav from "../../Components/ButtonNav";
 import book from "../../img/book.png";
 import welcome from "../../img/welcome.png";
 import arrow from "../../img/arrow.png";
+import back from "../../img/Back.png"
+import ButtonBack from "../../Components/ButtonBack";
 const Welcome = ({ navigation }: any) => {
   //Componente
   //TS --> Lógica
@@ -10,6 +12,7 @@ const Welcome = ({ navigation }: any) => {
   return (
     // TSX
     <S.Container>
+      <ButtonBack icon={back} onPress={() => navigation.goBack()}/>
       <S.ContainerBook>
         <S.BookImg source={book} />
       </S.ContainerBook>

@@ -2,9 +2,10 @@ import styled from "styled-components/native";
 import colors from "../../utils/colors";
 import { TouchableOpacityProps } from "react-native";
 type ButtonProps = {
-  width: number;
-  gap: number;
-  height: number;
+  backgroundColor?: string;
+  width?: number;
+  gap?: number;
+  height?: number;
 } & TouchableOpacityProps;
 
 export const Button = styled.TouchableOpacity<ButtonProps>`
@@ -14,14 +15,14 @@ export const Button = styled.TouchableOpacity<ButtonProps>`
   align-items: center;
   justify-content: center;
   border-radius: 10px;
-  background-color: ${colors.primary};
+  background-color: ${({backgroundColor})=> backgroundColor ?? colors.primary};
   gap: ${({ gap }) => gap}px;
 `;
-export const Text = styled.Text`
+export const Text = styled.Text<{textColor?: string}>`
   font-weight: 700;
   font-size: 20px;
   line-height: 27px;
   text-align: center;
-  color: ${colors.white};
+  color: ${({textColor})=> textColor ?? colors.white}
 `;
 export const Icon = styled.Image``;
