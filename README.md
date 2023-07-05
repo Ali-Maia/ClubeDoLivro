@@ -4,7 +4,7 @@ Um aplicativo sobre clube do livro, contendo três telas uma de login, outra de 
 
 ## Screenshots
 
-![App Screenshot](https://i.im.ge/2023/07/05/0zjek4.Desktop-1-1.png)
+![App Screenshot](https://lh3.googleusercontent.com/pw/AJFCJaUzqxdwxmvtLDK9b8IsMVtszj1P5DGngidp6O8iY8gN1GbO0PGdsnJDyCntW8HaDuFmSDPUYNR6rDBfo0d3xRwq1W6spLIrTHCc22hgKU9JvED1MeU1wpfl-ZEJmu_cvV5UR-J-jq1hiJC2aUgLFpw=w876-h657-s-no?authuser=0)
 
 ## Documentação de cores
 
